@@ -9,11 +9,11 @@ rm -rf /dist
 
 if [-a .git]; then
 git add -A
-git commit -m 'deploy'
+git commit -m "deploy codigo"
 else
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m "deploy codigo"
 fi
 
 git branch -M main
