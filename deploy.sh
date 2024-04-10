@@ -7,9 +7,14 @@ set -e
 #rm -rf .git
 rm -rf /dist
 
+if [-a .git]; then
+git add -A
+git commit -m 'deploy'
+else
 git init
 git add -A
-git commit -m "deploy codigo"
+git commit -m 'deploy'
+fi
 
 git branch -M main
 git remote add origin https://github.com/privateclasswizard/currtr01.git
@@ -23,14 +28,10 @@ cd dist
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
-if [-a .git]; then
-git add -A
-git commit -m 'deploy'
-else
+
 git init
 git add -A
 git commit -m 'deploy'
-fi
 
 #git remote add origin https://github.com/privateclasswizard/curriculo-ghpages.git
 #git push -u origin master
