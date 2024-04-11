@@ -5,7 +5,7 @@
   </div>
   <div class="textosection1">
    <h1 class="TituloSection1">Welcome stranger</h1>
-   <p class="paragrafoSection1">This site is owned by privateclasswizard (Douglas... Lessa)
+   <p class="paragrafoSection1">This site is owned by privateclasswizard (Douglas Lessa)
     scroll down to find out more</p>
   </div>
  </div>
