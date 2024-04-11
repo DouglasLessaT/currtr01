@@ -33,7 +33,7 @@ git add -A
 git commit -m 'deploy'
 git branch -M gh-pages
 git remote add origin https://github.com/privateclasswizard/currtr01.git
-git push -u origin main:gh-pages
+git push -u origin gh-pages
 
 cd -
 
