@@ -3,19 +3,15 @@
 # abort on errors
 set -e
 
-
-#rm -rf .git
 rm -rf /dist
 
-if [ -d ".git" ] 
+if [ ! -d ".git" ] 
 then 
- git add -A
- git commit -m "deploy codigo"
-else
  git init
- git add -A
- git commit -m "deploy codigo"
 fi
+
+git add -A
+git commit -m "deploy codigo"
 
 git branch -M main
 git remote add origin https://github.com/privateclasswizard/currtr01.git
