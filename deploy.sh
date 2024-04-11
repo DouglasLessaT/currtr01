@@ -31,8 +31,9 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
+
 git remote add origin https://github.com/privateclasswizard/currtr01.git
-git push -u origin gh-pages
+git push -u origin main:gh-pages
 
 cd -
 
