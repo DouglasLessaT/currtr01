@@ -31,8 +31,9 @@ echo "Passou aqui"
 git init
 git add -A
 git commit -m 'deploy'
-echo "Passou aqui2"
+echo "Passou aqui 2"
 git branch -M gh-pages
+echo "Passou aqui 3"
 git remote add origin https://github.com/privateclasswizard/currtr01.git
 git push -u origin main:gh-pages
 
