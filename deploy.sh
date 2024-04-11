@@ -19,7 +19,7 @@ else
  git push -u origin main
 fi
 
-
+git branch -d gh-pages
 
 # build
 npm run build
@@ -31,8 +31,8 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git remote add origin https://github.com/privateclasswizard/currtr01.git
 git branch -M gh-pages
+git remote add origin https://github.com/privateclasswizard/currtr01.git
 git push -u origin main:gh-pages
 
 cd -
