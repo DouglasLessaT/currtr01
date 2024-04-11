@@ -31,7 +31,7 @@ echo "Passou aqui"
 git init
 git add -A
 echo "deletando branche"
-git push origin -d gh-pages
+git push origin -d main:gh-pages
 git commit -m 'deploy'
 echo "Passou aqui 2"
 git branch -M gh-pages
