@@ -5,14 +5,14 @@ set -e
 
 
 #rm -rf .git
-rm -rf /dist
+rm -rf dist
 
 git init
 git add -A
 git commit -m "deploy codigo"
 
 git branch -M main
-git remote add origin https://github.com/privateclasswizard/currtr01.git
+#git remote add origin https://github.com/privateclasswizard/currtr01.git
 git push -u origin main
 
 # build
