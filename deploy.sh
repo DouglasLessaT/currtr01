@@ -3,7 +3,7 @@
 # abort on errors
 set -e
 
-rm -rf /dist
+rm -rf dist
 
 if [ ! -d ".git" ] 
 then 
