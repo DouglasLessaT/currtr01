@@ -17,6 +17,8 @@ else
  git add -A
  git commit -m "deploy codigo"
  git push -u origin main
+ git push origin -d gh-pages
+
 fi
 
 
