@@ -41,7 +41,7 @@ git commit -m 'deploy'
 #git push -f https://github.com/privateclasswizard/currtr01.git main:gh-pages
 
 git branch -M gh-pages
-git remote add origin https://github.com/privateclasswizard/currtr01.git
+git remote add origin https://github.com/privateclasswizard/currtr01.git main:gh-pages
 git push -u origin gh-pages
 
 cd -
