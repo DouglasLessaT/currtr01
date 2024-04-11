@@ -8,14 +8,18 @@ rm -rf dist
 if [ ! -d ".git" ] 
 then 
  git init
+ git add -A
+ git commit -m "deploy codigo"
+ git branch -M main
+ git remote add origin https://github.com/privateclasswizard/currtr01.git
+ git push -u origin main
+else
+ git add -A
+ git commit -m "deploy codigo"
+ git push -u origin main
 fi
 
-git add -A
-git commit -m "deploy codigo"
 
-git branch -M main
-git remote add origin https://github.com/privateclasswizard/currtr01.git
-git push -u origin main
 
 # build
 npm run build
