@@ -19,7 +19,7 @@ else
  git push -u origin main
 fi
 
-git branch -d gh-pages
+
 
 # build
 npm run build
