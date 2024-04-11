@@ -7,13 +7,14 @@ set -e
 #rm -rf .git
 rm -rf /dist
 
-if [-a .git]; then
-git add -A
-git commit -m "deploy codigo"
+if [ -d ".git" ] 
+then 
+ git add -A
+ git commit -m "deploy codigo"
 else
-git init
-git add -A
-git commit -m "deploy codigo"
+ git init
+ git add -A
+ git commit -m "deploy codigo"
 fi
 
 git branch -M main
