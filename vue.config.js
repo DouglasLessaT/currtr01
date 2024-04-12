@@ -4,6 +4,6 @@ module.exports = defineConfig({
   transpileDependencies: true,
 
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/currtr01/'
+  ? '/curriculo/'
   : '/'
 })

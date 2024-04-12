@@ -11,7 +11,7 @@ then
  git add -A
  git commit -m "deploy codigo"
  git branch -M main
- git remote add origin https://github.com/privateclasswizard/currtr01.git
+ git remote add origin https://github.com/privateclasswizard/curriculo.git
  git push -u origin main
 else
  git add -A
@@ -19,8 +19,6 @@ else
  git push -u origin main
  git push origin -d gh-pages
 fi
-
-
 
 # build
 npm run build
@@ -33,7 +31,7 @@ git init
 git add -A
 git commit -m 'deploy'
 git branch -M gh-pages
-git remote add origin https://github.com/privateclasswizard/currtr01.git
+git remote add origin https://github.com/privateclasswizard/curriculo.git 
 git push -u origin gh-pages
 
 cd -
